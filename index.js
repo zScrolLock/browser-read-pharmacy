@@ -26,7 +26,6 @@ app.get("/:url/:session/:type/:pageNumber", async (request, response) => {
 			const elements = document.querySelectorAll('div div h2 a span');
 			const array = [...elements];
 			const list = array.map(title => title.innerText)
-			console.log(list)
 
 			return list;
 		});
