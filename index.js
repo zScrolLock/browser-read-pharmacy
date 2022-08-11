@@ -33,10 +33,10 @@ app.get("/:url/:session/:type/:pageNumber", async (request, response) => {
         await browserInstance.close();
 
         return response.status(200).json({
-            ok: true,
-            code: 200,
-            list: titleList
-        })
+			ok: true,
+			code: 200,
+			medicines: titleList
+		})
 
 	} catch (err) {
 	    console.log("Could not create a browser instance => : ", err);
