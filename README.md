@@ -26,5 +26,11 @@
 
 ```
 
+- The project have a endpoint called: `/:url/:medicine/:pageNumber`
+
+```bash
+    (GET) curl localhost:${PORT}/consultaremedios.com.br/betametasona/1
+```
+
 
 - Luis Augusto (2022)
